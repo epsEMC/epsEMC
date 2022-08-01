@@ -1,4 +1,4 @@
-﻿
+
 # Tensorflow Setting Guide
 
 v1.0 2022.08.01 First release
@@ -170,7 +170,8 @@ From the command window, move the path and enter the nvidia-smi.
 
 "nvidia-smi.exe" displays what drivers are installed and other information.
 or "nvcc --version" also gives you the correct version of CUDA.
-((nvcc image))
+
+![nvcc version](https://github.com/epsEMC/epsEMC/blob/main/imageTemp/doc2_nvcc%20version.JPG?raw=true)
 
 
 Below is the example of usage of GPU.
@@ -249,7 +250,8 @@ Just copy from cuDNN, to CUDA toolkit bin folder.
 ### 2.3 GPU Setting Change
 
 Then, let's check nvidia-smi, again. It shows the driver status.
-((image nvidia-smi status new))
+
+![nvidia-smi status new](https://github.com/epsEMC/epsEMC/blob/main/imageTemp/nvidia-smi%20status%20new.JPG?raw=true)
 
 There is TCC/WDDM and ECC whcih are the option for the core accelation.
 TCC = Tesla Compute Cluster, It blocks to using GPU for monitor ouput,
@@ -365,7 +367,7 @@ All the python modules are installed here.
 
 This makes active the venv_ts, or you can type activate.bat from the terminal windows.
 
-((doc2_venv enable)
+![venv enable](https://github.com/epsEMC/epsEMC/blob/main/imageTemp/doc2_venv%20enable.JPG?raw=true)
 
 This is the result of enabling venv.
 ```
@@ -376,7 +378,7 @@ If there is PS(Powershell), you can change it
 > 'Terminal:Select Default Profile'
 > Select Command Prompt
 
-((doc2_venv default profile))
+![venv defualt profile](https://github.com/epsEMC/epsEMC/blob/main/imageTemp/doc2_venv%20default%20profile.JPG?raw=true)
 
 
 ### 4.2.3 Install Tensorflow package
@@ -404,7 +406,7 @@ Below are for the tensorflow.
 
 Also, these are the useful extensions.
 
-((doc2_extensions))
+![extensions](https://github.com/epsEMC/epsEMC/blob/main/imageTemp/doc2_extensions.JPG?raw=true)
 
 
 
@@ -455,12 +457,12 @@ The project in VS code configures with folder structure, so the folder name is t
 
 From file tap, open folder,
 
-((doc2_open folder))
+![open folder](https://github.com/epsEMC/epsEMC/blob/main/imageTemp/doc2_open%20folder.jpg?raw=true)
 
 
 At a your own folder, select or generate project folder.
 
-((doc2_own folder.jpg))
+![own folder](https://github.com/epsEMC/epsEMC/blob/main/imageTemp/doc2_own%20folder.jpg?raw=true)
 
 
 ### 5.4.2. Generate File
@@ -471,7 +473,7 @@ Generate New file
 
 Generate Code file such as c, py, and etc.
 
-((doc2_generate code.jpg))
+![generate code](https://github.com/epsEMC/epsEMC/blob/main/imageTemp/doc2_generate%20code.jpg?raw=true)
 
 
 Then, type your code and run.
