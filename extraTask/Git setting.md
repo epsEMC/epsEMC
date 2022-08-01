@@ -131,7 +131,7 @@ github에 있는 내용을 가져오는 방법에는 3가지가 있다.
 2. fetch
 3. clone
 
-clone 은 원격저장소의 내용을 새로운 폴더에 그대로 복사하는 것으로 새로운 작업pc에서 작업해야할 경우 유용하다.
+
 
 ### 1) Git pull
 
@@ -144,11 +144,20 @@ git remote -v # git 연결상태 확인
 git pull origin main #또는 git pull [원격저장소이름] [원격저장소에서 받아고자하는 브랜치 이름]
 
 ```
+
+
+> git pull = git fetch + git merge
+
+
+### 2) Git Fetch
 git fetcg 사용법은 동일하므로 생략한다.
 
 fetch는 변경 사항을 가져오지만 병합(merge)는 하지 않는다. 이를 이용하여 다른 사람이 수정한 부분을 확인하고 병합할 수 있는 장점이 있지만 초보나 개인적인 목적에서는 사용할 일이 없다.
 
-### 2) Git clone
+
+### 3) Git clone
+
+clone 은 원격저장소의 내용을 새로운 폴더에 그대로 복사하는 것으로 새로운 작업pc에서 작업해야할 경우 유용하다.
 
 우선 가져올 폴더를 생성한다.
 github 에서 clone 할 원격 저장소의 주소를 복사한다.
@@ -160,6 +169,23 @@ git clone https://github.com/epsEMC/epsEMC.git # 복사한 주소 삽입
 
 ```
 clone은 초기혹은 push pull 사용하면서 history가 꼬여  오류가 발생한다면 기존의 Local 저장소를 지우고 clone 해 오면 쉽게 해결 된다.
+
+### 3) 온라인에서 작업하기
+수정하고자 하는 파일에 접속하여 편집하기 클릭
+![온라인에서 수정하기](https://github.com/epsEMC/epsEMC/blob/main/imageTemp/doc1_git%20modi%20doc.JPG?raw=true)
+
+내용을 수정하고 아래의 commit changes 에서 commit 사항을 입력 후 commit changes 클릭
+![온라인 커밋하기](https://github.com/epsEMC/epsEMC/blob/main/imageTemp/doc1_git%20modi%20commit.JPG?raw=true)
+
+로컬 저장소에 github 온라인 저장소에서 수정된 사항을 아래 명령을 통해 내려받아 자동 병합을 시켜준다.
+
+```
+git pull origin amin
+
+```
+그러면 아래와 같은 문구와 함께 변경된 파일, 변경 범위 등이 간략히 표시되며 병합이 완료 된다.
+
+![pull result](https://github.com/epsEMC/epsEMC/blob/main/imageTemp/doc1_git%20pull%20result.JPG?raw=true)
 
 
 # Reference
