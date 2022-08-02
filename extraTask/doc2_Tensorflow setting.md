@@ -554,19 +554,25 @@ All the results depend on your idea! Please keep think and extend your idea. The
 # Reference
 
 1. VS code installation
-   : https://mickael-k.tistory.com/12?category=798523
-2.  VS code environment setting
-   : https://mickael-k.tistory.com/13
+    : https://mickael-k.tistory.com/12?category=798523
+ 
+2. VS code environment setting 
+    : https://mickael-k.tistory.com/13
+   
 3.  VS code virtual environment setting
-  : [Visual Studio Code 파이썬(Python) 가상개발환경(venv) 셋팅 (tistory.com)](https://mr-spock.tistory.com/19)
+    : [Visual Studio Code 파이썬(Python) 가상개발환경(venv) 셋팅 (tistory.com)](https://mr-spock.tistory.com/19)
+
 4. Tensorflow installation guide
    : https://www.tensorflow.org/install
-5. VScode setting guide for Tensorflow from Youtube
- : https://youtu.be/e4n2VnhiI28
-6. Tensorflow lecture from youtube
- : https://youtu.be/ivfp2wpPLzs
 
-Terms and conditions
+5. VScode setting guide for Tensorflow from Youtube
+   : https://youtu.be/e4n2VnhiI28
+
+6. Tensorflow lecture from youtube
+   : https://youtu.be/ivfp2wpPLzs
+
+# Terms and conditions
+
 |Terms|Definition|
 |-|-|
 |CUDA core|SStandard NVIDIA parallel processing unit.|
