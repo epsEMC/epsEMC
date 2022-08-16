@@ -161,11 +161,15 @@ From the file explorer, move on the git server position.
 E:\ElecDevGitServer\Bonobo.Git.Server\App_Data\Repositories\
 Generate your own server folder tree.
 example.
-> doc3_gitserverstructure.jpg
+
+![doc3_gitserverstructure.jpg](https://github.com/epsEMC/epsEMC/blob/main/imageTemp/doc3_gitserverstructure.jpg?raw=true)
+
 
 Then, mouse right click > git bash here. 
-> doc3_gitserverstructurebashhere.jpg
-> doc3_gitserverstructurebashhere2.jpg
+
+![doc3_gitserverstructurebashhere.jpg](https://github.com/epsEMC/epsEMC/blob/main/imageTemp/doc3_gitserverstructurebashhere.jpg?raw=true)
+
+![doc3_gitserverstructurebashhere2.jpg](https://github.com/epsEMC/epsEMC/blob/main/imageTemp/doc3_gitserverstructurebashhere2.jpg?raw=true)
 
 Now, you can use git command.
 
