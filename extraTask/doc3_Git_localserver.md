@@ -194,9 +194,104 @@ git config --list
 ```
 
 ### 3) Git commit and push from server
-### 4) Git commit and push from server
 
-refer the blog
+Git bash here on 
+"E:\ElecDevGitServer\Bonobo.Git.Server\App_Data\Repositories"
+
+Let's make a folder on the server repository.
+```
+mkdir testFolder
+cd testFolder
+git init
+```
+
+The folder is initilized as new repository and path name changed as (main) which means connection to git.
+Also, in the testFolder, ".git" file is generated.
+
+Connect folder as server repository.
+```
+git remote add origin http://localhost:3000/Bonobo.Git.Server/testFolder.git
+git remote -v
+```
+The server address is like above.
+remote -v shows the server connection.
+
+Now, add any file. Without any changes even empty folder not effect changes.
+here we make new text.txt.
+```
+git add . # if want specific file, git add text.txt
+git status
+```
+git status shows the commit changes.
+
+then you must make a commit about changes.
+```
+git commit -m "new folder and file"
+```
+Filnally, upload the file to server.
+```
+git push origin main
+```
+This is the test screen.
+
+![doc3_gittest.jpg](https://github.com/epsEMC/epsEMC/blob/main/imageTemp/doc3_gittest.jpg?raw=true)
+
+When the login window pops up, type admin/admin.
+
+
+Frequently, the git remote connection has problem such as large charater, space or change address. Try belows.
+* Change current remote repository address
+```
+git remote -v
+```
+* Change the url address with connected remote repository
+```
+git remote set-url origin "url address"
+```
+* Remove remote 
+```
+git remote remove "url address"
+```
+
+
+
+
+### 4) Git commit and push from remote PC
+
+according to the new account which made before,
+you are going to clone server and modify and push.
+
+Select a folder which you are going to make git remote folder on.
+then git bash here.
+
+![doc3_gittest_localgitbashhere.jpg](https://github.com/epsEMC/epsEMC/blob/main/imageTemp/doc3_gittest_localgitbashhere.jpg?raw=true)
+
+
+```
+mkdir testRemote
+cd testRemote
+git clone http://172.20.108.147:3000/Bonobo.Git.Server/testFolder.git
+cd testRemote
+cd testFolder #which copied from server.
+(then you can see (main)) 
+```
+> doc3_gittest_localclone.jpg
+
+![doc3_gittest_localclone.jpg](https://github.com/epsEMC/epsEMC/blob/main/imageTemp/doc3_gittest_localclone.jpg?raw=true)
+
+Then, the files from server are copied to remote PC.
+Add new file test2.txt
+Then git these.
+```
+git add test2.txt
+git commit -m "add text2.txt"
+git push origin main
+```
+But, you need to check DRM status. you should connect DRM to upload drm files.
+
+Finally check from web UI.
+
+refer 3), 4) from the blog
 https://jexe.tistory.com/8
 
 
