@@ -39,6 +39,19 @@ Below is the useful commands.
 
 #after modifying, don't forget push your files.
 
+# github authentication Failed
+```
+fatal: remote error: Invalid username or password.
+```
+solution
+```
+git remote remove origin
+git remote add origin http://username:password@github.com/myRepository
+ex)
+git remote add origin http://ID:PW@github.com/epsEMC.git
+```
+
+
 ```
 
 All these push and pull process can be done online directly.
